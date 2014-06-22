@@ -4,6 +4,10 @@ body {
 .top-nav {
     height: 80px;
     background-color: #FF3333;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
 }
 .top-nav ul {
     margin: 0;
@@ -21,6 +25,10 @@ body {
     padding: 0 20px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 16px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
 }
 .top-nav ul li a:hover {
     text-decoration: none;
@@ -33,10 +41,6 @@ body {
     background: linear-gradient(to bottom,  #ff3333 0%,#ff5d5b 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3333', endColorstr='#ff5d5b',GradientType=0 ); /* IE6-9 */
     color: #FFF;
-    transition: all 300ms ease;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    -o-transition: all 300ms;
 }
 .top-nav .logo {
     line-height: 80px;
@@ -44,10 +48,45 @@ body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 300;
     color: #ff9c97;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+.top-nav.stick {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    z-index: 500;
+    background-color: #123d6f;
+}
+.top-nav.stick ul li a {
+    line-height: 40px;
+    color: #3c99dd;
+}
+.top-nav.stick ul li a:hover {
+    background: #123d6f; /* Old browsers */
+    background: -moz-linear-gradient(top,  #123d6f 0%, #285e8e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#123d6f), color-stop(100%,#285e8e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #123d6f 0%,#285e8e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #123d6f 0%,#285e8e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #123d6f 0%,#285e8e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #123d6f 0%,#285e8e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123d6f', endColorstr='#285e8e',GradientType=0 ); /* IE6-9 */
+}
+.top-nav.stick .logo {
+    line-height: 40px;
+    color: #3c99dd;
 }
 h1, h2, h3 {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #285e8e;
+}
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 100;
 }
 header {
     background: url('../images/shattered.png');
@@ -90,32 +129,27 @@ header h2 {
     margin: 30px;
 }
 .leon {
-    position: absolute;
-    top: 0;
-    right: 0;
+    float: right;
+    margin: -63px -15px 0 20px;
 }
-.bio {
+#bio {
     position: relative;
-    padding-right: 370px;
     min-height: 350px;
 }
-.bio p {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 20px;
-    line-height: 35px;
-    font-weight: 100;
+#bio p {
+    margin-bottom: 20px;
 }
-.work {
+.alt {
     min-height: 500px;
 }
-.work h2 {
+.alt h2 {
     color: #F1F1F1;
     background-color: #FF3333;
-    margin: 0 -20px 20px -20px;
-    padding: 0 20px;
+    margin: 0 -15px 15px -15px;
+    padding: 0 15px;
     line-height: 70px;
 }
-.work ul {
+#work ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -140,6 +174,9 @@ header h2 {
 .work-item h3 {
     font-size: 30px;
     margin: 0 0 10px 0;
+}
+.work-item p {
+    margin: 0 40px 0 0;
 }
 .work-item:hover {
     transition: all 0.5s ease;
@@ -167,4 +204,35 @@ header h2 {
 .work-item:hover .view {
     transition: 0.5s;
     right: 0;
+}
+#contact .right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#contact .right ul li {
+    display: inline-block;
+    font-size: 64px;
+    margin: 0 20px 0 0;
+}
+#contact .right ul li a {
+    text-decoration: none;
+}
+footer {
+    background: #333;
+    min-height: 200px;
+}
+@media (max-width: 650px) {
+    header .inner {
+        width: 450px;
+        margin: 120px auto;
+    }
+    header h1 {
+        font-size: 50px;
+
+    }
+    header h2 {
+        font-size: 25px;
+
+    }
 }

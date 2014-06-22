@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Revill Web Design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Web design and development by Leon Revill.">
+    <meta name="author" content="Leon Revill">
     <link href="includes/css/bootstrap.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,200,300' rel='stylesheet' type='text/css'>
     <link href="includes/css/font-icons.css" rel="stylesheet" />
     <link href="includes/css/style.css" rel="stylesheet" />
+    <script src="includes/js/jquery-2.1.1.min.js"></script>
     <script src="includes/js/bootstrap.min.js"></script>
-    <title>Revill Web Design</title>
+    <script src="includes/js/script.js"></script>
 </head>
-<body>
+<body id="top">
     <nav class="top-nav">
         <div class="container-fluid">
             <div class="logo pull-left">
-                <span class="icon icon-lamp3"></span> REVILL<span class="alt">WEB</span>DESIGN
+                <!-- <span class="icon icon-lamp3"></span> --> REVILL<span class="alt">WEB</span>DESIGN
             </div>
-
             <ul class="pull-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -28,33 +34,33 @@
             <h2>by Leon Revill.</h2>
         </div>
     </header>
-    <div class="container-fluid bio">
+    <div class="container-fluid" id="bio">
         <h2>BIO</h2>
-        <p>From the very first time I got my hands on the internet I wanted to create things for the web. My professional web development career got started when founding a small IT company while studying Computer Networks at University. The demand for websites and web applications was obvious and my previous freelance experience allowed me to take on all kinds of interesting projects. I then moved on to specialize in CRM systems development where I honed my PHP and mySQL skills. To accompany these specialized business platforms I looked to improving my front-end knowledge and came to love JavaScript. At the beginning of 2014 I had my first jQuery book published which was a great personal achievement. My real passion is for AngularJS which I spend most of my time working with these days. I use my blog www.revillweb.com to publish articles and tutorials on web development in hope to help other enthusiastic web developers get started in new, upcoming technologies.</p>
         <div class="leon">
-            <img src="includes/images/leon.JPG" width="350" height="350">
+            <img src="includes/images/leon.JPG" width="350" height="350" alt="Leon Revill">
         </div>
+        <p>From the very first time I got my hands on the internet I wanted to create things for the web. My professional web development career got started when founding a small IT company while studying Computer Networks at University. The demand for websites and web applications was obvious and my previous freelance experience allowed me to take on all kinds of interesting projects. I then moved on to specialize in CRM systems development where I honed my PHP and mySQL skills. To accompany these specialized business platforms I looked to improving my front-end knowledge and came to love JavaScript. At the beginning of 2014 I had my first jQuery book published which was a great personal achievement. My real passion is for AngularJS which I spend most of my time working with these days. I use my blog www.revillweb.com to publish articles and tutorials on web development in hope to help other enthusiastic web developers get started in new, upcoming technologies.</p>
     </div>
-    <div class="container-fluid work">
+    <div class="container-fluid alt" id="work">
         <h2>WORK</h2>
         <ul>
             <li class="col-md-6">
-                <a class="work-item" href="#" target="_blank">
+                <a class="work-item" href="http://www.amazon.com/gp/product/1783280891/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1783280891&linkCode=as2&tag=revwebdes-20&linkId=FVXSKJEDJ4DWG3NV" target="_blank">
                     <div class="image">
                         <img src="includes/images/jquery-2-cookbook.jpg" alt="jQuery 2.0 Development Cookbook">
                     </div>
                     <h3>JQUERY 2.0 DEVELOPMENT COOKBOOK</h3>
-                    <p>Some text here.</p>
+                    <p>My jQuery 2.0 cookbook published in early 2014 provides Over 80 recipes providing modern solutions to web development problems with real-world examples.</p>
                     <div class="view"><span class="icon icon-arrow-right7"></span></div>
                 </a>
             </li>
             <li class="col-md-6">
-                <a class="work-item" href="#" target="_blank">
+                <a class="work-item" href="http://www.revillweb.com/" target="_blank">
                     <div class="image">
                         <img src="includes/images/revillweb.png" alt="revillweb.com">
                     </div>
                     <h3>REVILLWEB.COM</h3>
-                    <p>Some text here.</p>
+                    <p>My blog for sharing my development experience in the form of articles and tutorials. With over 60k readers a month a great personal achievement.</p>
                     <div class="view"><span class="icon icon-arrow-right7"></span></div>
                 </a>
             </li>
@@ -64,21 +70,71 @@
                         <img src="includes/images/angcomplete.png" alt="angcomplete">
                     </div>
                     <h3>ANGCOMPLETE</h3>
-                    <p>Some text here.</p>
+                    <p>As an AngularJS enthusiast and advocate, Angcomplete is my answer to a simple but powerful auto-complete feature with no jQuery dependencies.</p>
                     <div class="view"><span class="icon icon-arrow-right7"></span></div>
                 </a>
             </li>
             <li class="col-md-6">
-                <a class="work-item" href="#" target="_blank">
+                <a class="work-item" href="http://domains.webunity.io" target="_blank">
                     <div class="image">
                         <img src="includes/images/webunity-domains.png" alt="domains.webunity.io">
                     </div>
                     <h3>WEBUNITY :: DOMAINS</h3>
-                    <p>Some text here.</p>
+                    <p>The #1 site for finding and purchasing high quality, aged and SEO beneficial domain names. An AngularJS web app supported by my expanding SEO API built with Laravel.</p>
                     <div class="view"><span class="icon icon-arrow-right7"></span></div>
                 </a>
             </li>
         </ul>
     </div>
+    <div class="container-fluid alt" id="contact">
+        <h2>CONTACT</h2>
+        <div class="left col-md-6">
+            <h3>MESSAGE</h3>
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Your Name</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="name" placeholder="Enter your name...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Your Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter you email...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="7" id="message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">SEND</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="right col-md-6">
+            <h3>BE SOCIAL</h3>
+            <ul>
+                <li><a href="#"><span class="icon icon-google-plus3"></span></a></li>
+                <li><a href="#"><span class="icon icon-twitter2"></span></a></li>
+                <li><a href="#"><span class="icon icon-facebook3"></span></a></li>
+                <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+            </ul>
+            <h3>IM ALL EARS</h3>
+            <p>Contact me about anything, if im available I'll be happy to help. I am always open to working on interesting projects as a developer or consultant, take a look at my CV and then get in contact using the form provided or via one of the social media platforms I'm on above.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="col-md-10">
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </footer>
 </body>
 </html>
