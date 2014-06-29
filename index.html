@@ -21,10 +21,11 @@
                 <!-- <span class="icon icon-lamp3"></span> --> REVILL<span class="alt">WEB</span>DESIGN
             </div>
             <ul class="pull-right">
-                <li><a href="#top">Home</a></li>
+                <li><a href="#top" class="active">Home</a></li>
                 <li><a href="#bio">Bio</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a target="_blank" href="cv.html">CV</a></li>
             </ul>
         </div>
     </nav>
@@ -34,15 +35,15 @@
             <h2>by Leon Revill.</h2>
         </div>
     </header>
-    <div class="container-fluid" id="bio">
+    <div class="container-fluid anchor" id="bio">
         <h2>BIO</h2>
         <div class="leon">
             <img src="includes/images/leon.JPG" width="350" height="350" alt="Leon Revill">
         </div>
         <p>From the very first time I got my hands on the internet I wanted to create things for the web. My professional web development career got started when founding a small IT company while studying Computer Networks at University. The demand for websites and web applications was obvious and my previous freelance experience allowed me to take on all kinds of interesting projects. I then moved on to specialize in CRM systems development where I honed my PHP and mySQL skills. To accompany these specialized business platforms I looked to improving my front-end knowledge and came to love JavaScript. At the beginning of 2014 I had my first jQuery book published which was a great personal achievement. My real passion is for AngularJS which I spend most of my time working with these days. I use my blog www.revillweb.com to publish articles and tutorials on web development in hope to help other enthusiastic web developers get started in new, upcoming technologies.</p>
     </div>
-    <div class="container-fluid alt" id="work">
-        <h2>WORK</h2>
+    <div class="container-fluid alt anchor" id="work">
+        <h2>LATEST WORK</h2>
         <ul>
             <li class="col-md-6">
                 <a class="work-item" href="http://www.amazon.com/gp/product/1783280891/ref=as_li_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1783280891&linkCode=as2&tag=revwebdes-20&linkId=FVXSKJEDJ4DWG3NV" target="_blank">
@@ -86,7 +87,7 @@
             </li>
         </ul>
     </div>
-    <div class="container-fluid alt" id="contact">
+    <div class="container-fluid alt anchor" id="contact">
         <h2>CONTACT</h2>
         <div class="left col-md-6">
             <h3>MESSAGE</h3>
@@ -110,31 +111,28 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">SEND</button>
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <button type="button" id="sendMail" class="btn btn-default">SEND</button>
                     </div>
+                    <div class="col-sm-8"><ul id="sendErrors" class="alert alert-danger" style="display: none;"></ul></div>
                 </div>
             </form>
         </div>
         <div class="right col-md-6">
             <h3>BE SOCIAL</h3>
             <ul>
-                <li><a href="#"><span class="icon icon-google-plus3"></span></a></li>
-                <li><a href="#"><span class="icon icon-twitter2"></span></a></li>
-                <li><a href="#"><span class="icon icon-facebook3"></span></a></li>
-                <li><a href="#"><span class="icon icon-linkedin"></span></a></li>
+                <li><a href="https://plus.google.com/+LeonRevill" target="_blank"><span class="icon icon-google-plus3"></span></a></li>
+                <li><a href="https://twitter.com/revillweb" target="_blank"><span class="icon icon-twitter2"></span></a></li>
+                <li><a href="http://uk.linkedin.com/in/leonrevill/" target="_blank"><span class="icon icon-linkedin"></span></a></li>
             </ul>
             <h3>IM ALL EARS</h3>
             <p>Contact me about anything, if im available I'll be happy to help. I am always open to working on interesting projects as a developer or consultant, take a look at my CV and then get in contact using the form provided or via one of the social media platforms I'm on above.</p>
         </div>
     </div>
     <footer>
-        <div class="col-md-10">
-
-        </div>
-        <div class="col-md-2">
-
-        </div>
+        Copyright &copy; www.revillwebdesign.com 2014
+        <img src="includes/images/valid_html5.png" alt="Valid HTML5">
+        <img src="includes/images/valid_css3.png" alt="Valid CSS3">
     </footer>
 </body>
 </html>

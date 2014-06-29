@@ -83,20 +83,17 @@ header .social ul li a .icon {
 .content .section ul {
     margin: 0;
 }
-.content .section ul li {
-
-}
-table tr td {
-
+table .company-title td {
+    background-color: #333;
+    color: #FFF;
 }
 table tr td p {
-    line-height: 30px;
     padding: 5px 15px;
 }
 
-table tr.company-title {
-    background-color: #333;
-    color: #FFF;
+footer {
+    text-align: right;
+    margin: 20px 0;
 }
 
 @media (max-width:768px){
@@ -109,6 +106,7 @@ table tr.company-title {
 @media print {
     html, body {
         -webkit-print-color-adjust: exact;
+        background: #F1F1F1 !important;
     }
     header {
         background-color: #3c99dd !important;
@@ -134,5 +132,12 @@ table tr.company-title {
     }
     header .social ul li a, header .social ul li a .icon {
         color: #E1E1E1 !important;
+    }
+    .company-title td {
+        background-color: #333 !important;
+        color: #FFF !important;
+    }
+    .page-break {
+        margin-top: 50px;
     }
 }
